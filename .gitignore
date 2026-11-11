@@ -1,0 +1,28 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+.ipynb_checkpoints/
+
+# Secrets
+.env
+*.pem
+
+# Data, runs and model artifacts
+data/raw/
+data/interim/
+runs/
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+*.part
+wandb/
+mlruns/
+
+# OS
+.DS_Store
