@@ -4,10 +4,20 @@ Universal rules live in the global configs (`~/.claude/CLAUDE.md`, `~/.codex/AGE
 
 ## Project
 
-- **Status:** scaffolding only. Nothing has been run.
-- **Research question, data, models, evaluation protocol:** TBD. Do not invent them; ask the owner.
+- **Status:** Phase 0, research definition and novelty review. No hypothesis, dataset, model choice or protocol is frozen, and nothing has been run.
+- **Foundation:** Takehi, Teoh, Zhang and Khattab, "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights" (MIT CSAIL, 2 Nov 2026), https://rikiyat.github.io/blog/weight-space-programming/, and its released logs, https://github.com/RikiyaT/lm_understand-logs. WeightCourt starts from that post's "recursive self-improvement" future direction.
+- **Candidate direction (not frozen):** when an AI agent proposes a persistent edit to another model's weights, can an independent verifier decide whether to accept it, especially when the agent's diagnosis is wrong, incomplete or misleading, and as accepted edits accumulate?
 - **Owner / reviewer:** @omoissy
 - **Repo:** https://github.com/omoissy/WeightCourt (public). Primary branch `main`; work on feature branches and merge through PRs.
+
+## Research boundaries
+
+- Freeze the research question, hypotheses, splits and analysis plan in a committed, versioned protocol before any confirmatory run. Until then, every result is exploratory.
+- WeightCourt is not a sequel to the owner's SAE-MAS capstone. Do not copy that project's code, data or results. The core study needs no SAE training, probes or replication of the capstone's activation interventions. Acknowledge shared ideas in the paper.
+- Do not claim weight editing, verification or acceptance gates, adversarial edits or sequential editing as novel on their own. The contribution must be a specific gap that the Phase 0 review confirms.
+- MIT's editor ("GPT-6 Astra") may not be available to us. Keep "re-evaluating MIT's published edit" separate from "generating new edits with a model we can run", and never present one as the other.
+- Check every citation, number and arXiv ID in docs or the paper against the source itself. Do not carry them over unchecked from chat summaries or AI-generated plans.
+- Licenses for MIT's logs: their scripts are MIT; logs, data and networks are CC BY 4.0 (credit them); quoted benchmark content keeps its own license. `exp5_write_from_scratch/` quotes GPL-3.0 MinAtar code, so do not copy from it.
 
 ## Runtime and commands
 

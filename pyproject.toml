@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "weightcourt"
 version = "0.1.0"
-description = "WeightCourt research project (scope to be defined)."
+description = "Research on independently verifying AI-proposed neural-network weight edits (Phase 0)."
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
